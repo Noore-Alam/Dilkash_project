@@ -8,20 +8,54 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800,900" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
+    <!----============================
+                Menu Section
+    ==============================---->
+    <header class="main_header">
+        <div class="container">
+            <div class="logo_left">
+                <a href=""><img src="img/logo.png" alt=""></a>
+            </div>
+            <div class="menu_right_btn">
+                <ul>
+                    <li><a href="" class="sign_btn">Sign Up</a></li>
+                    <li><a href="" class="refer_btn">Refer a Friend</a></li>
+                    <li><a href="" class="en_btn">En<i class="fas fa-caret-down"></i></a></li>
+                </ul>
+            </div>
+            <nav class="menu_list">
+                <ul>
+                    <li><a href="" class="it_talents">For IT Talents<span class="lnr lnr-chevron-down"></span></a></li>
+                    <li><a href="" class="employers it_talents">For Employers<span class="lnr lnr-chevron-down"></span></a></li>
+                    <li><a href="" class="employers it_talents">How It Works</a></li>
+                    <li><a href="" class="employers it_talents">Login</a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+    <!----============================
+            Menu Section End
+    ==============================---->
+
+    <!----============================
+                Home Section
+    ==============================---->
     <section class="home_section">
         <div class="container">
             <div class="row">
                 <div class="home_all_text">
                     <div class="home_heaing">
                         <div class="icon_img text-right">
-                            <img src="img/h_icon_1.png" class="img_1 animated infinite rotateIn" alt="">
-                            <img src="img/h_icon_2.png" class="img_2 animated infinite rotateOut delay-2s slow" alt="">
+                            <img src="img/h_icon_1.png" class="img_1 animated infinite rotateIn slower" alt="">
+                            <img src="img/h_icon_2.png" class="img_2 animated infinite rotateOut delay-2s slower" alt="">
                         </div>
                         <p>Welcome to</p>
                         <h1>Recruitment<br>
@@ -30,7 +64,7 @@
                     <div class="home_text">
                         <p>Find an interesting job opportunity within IT field without a lot<br> of work required from your side. Let the companies contact you<br> with a job opportunity that you love - fitting your preferences<br> and your career goals</p>
                         <div class="btn_home">
-                            <a href="">Create a Profile <div class="btn_round"></div><img src="img/right_arrow.png" alt="" class="img-responsive about_icon1 animated infinite fadeInLeft slower" height=""></a>
+                            <a href="">Create a Profile <div class="btn_round"></div><span class="lnr lnr-arrow-right"></span></a>
                         </div>
                     </div>
                 </div>
@@ -41,11 +75,18 @@
             <img src="img/gril_img.png" class="home_gril wow fadeInRight slow" alt="">
         </div>
     </section>
+    <!----=============================
+                Home Section End
+    ==============================---->
+
+    <!----=============================
+            About Section
+    ==============================---->
 
     <section class="about_section">
         <div class="about_icon">
-            <img src="img/ellips_about.png" class="about_icon1 animated infinite rotateOut slower" alt="">
-            <img src="img/about_home.png" class="about_icon2 animated infinite rotateOut delay-2s slower" alt="">
+            <img src="img/ellips_about.png" class="about_icon1 wow infinite rotateOut" data-wow-duration="4s" alt="">
+            <img src="img/about_home.png" class="about_icon2 wow infinite rotateOut delay-2s" data-wow-duration="4s" alt="">
         </div>
         <div class="container">
             <div class="row">
@@ -57,14 +98,19 @@
                 <div class="video_home text-center">
 
                     <div class="icon_play">
-                        <img src="img/about_gril.png" class="about_img" alt=""><img src="img/about_infinit.gif" class="img_down img_1 animated infinite rotateIn slower" alt=""><a href=""><i class="fas fa-play"></i></a>
+                        <img src="img/about_gril.png" class="about_img" alt=""><img src="img/about_infinit.gif" class="img_down img_1 wow infinite rotateIn" data-wow-duration="4s" alt=""><a href=""><i class="fas fa-play"></i></a>
                     </div>
-
                 </div>
             </div>
         </div>
     </section>
+    <!----=============================
+            About Section End
+    ==============================---->
 
+    <!----=============================
+            Team Section
+    ==============================---->
     <section class="team_section">
         <div class="container">
             <div class="row">
@@ -93,6 +139,13 @@
             </div>
         </div>
     </section>
+    <!----=============================
+            Team Section End
+    ==============================---->
+
+    <!----=============================
+            About 2 Section
+    ==============================---->
     <section class="about2_section">
         <div class="man_img">
             <img src="img/man_icon.png" class="wow fadeInLeft slow" alt="">
@@ -110,8 +163,10 @@
                             <li><a href=""><i class="far fa-check-circle"></i>Direct Contact with TOP IT Employers</a></li>
                             <li><a href=""><i class="far fa-check-circle"></i>No Third Parties (f.  e. Headhunters) involved</a></li>
                             <li><a href=""><i class="far fa-check-circle"></i>Privacy and full control of your Personal Data</a></li>
-                            <li><a href=""><i class="far fa-check-circle"></i>No Waste of time: With the 1st message all Information that you <br><pre>need to decide about your interest in the position</pre>
-                            </a></li>
+                            <li>
+                                <a href=""><i class="far fa-check-circle"></i>No Waste of time: With the 1st message all Information that you <br><pre>need to decide about your interest in the position</pre>
+                                </a>
+                            </li>
                             <li><a href=""><i class="far fa-check-circle"></i>Employers andwer your questions when they contact you</a></li>
                             <li><a href=""><i class="far fa-check-circle"></i>Stay updated about your TOP Preferences Employers</a></li>
                         </ul>
@@ -121,9 +176,283 @@
             </div>
         </div>
     </section>
+    <!----=============================
+            About 2 Section End
+    ==============================---->
 
-    <br><br><br><br><br><br><br><br><br><br>
-    <br><br><br><br><br><br><br><br><br><br>
+    <!----=============================
+            Register Section
+    ==============================---->
+    <section class="register_section">
+        <div class="container">
+            <div class="row">
+                <div class="register_box">
+                    <div class="register_heading text-center">
+                        <h1>Register Now and Earn Bonus</h1>
+                        <p>"On the other hand, we denounce with righteous indignation and dislike<br> men who are so beguiled and demoralized.</p>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="register_icon text-center">
+                                <h4>Register your detailed<br> profile heare</h4>
+                            </div>
+                            <div class="img_icon">
+                                <div class="icon_notpad">
+                                    <img src="img/notpad.png" class="notpad" alt="">
+                                </div>
+                                <img src="img/fast_arrow.png" class="fast_arrow" alt="">
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="img_icon">
+                                <div class="icon_notpad">
+                                    <img src="img/three_man.png" class="notpad" alt="">
+                                </div>
+                                <img src="img/second_arro.png" class="second_arrow" alt="">
+                            </div>
+                            <div class="register_icon register_icon2 text-center">
+                                <h4>Get Contacted directly<br> by employers</h4>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="register_icon text-center">
+                                <h4>Register your detailed<br> profile heare</h4>
+                            </div>
+                            <div class="img_icon">
+                                <div class="icon_notpad">
+                                    <img src="img/tow_men.png" class="notpad" alt="">
+                                </div>
+                                <img src="img/third_arrow.png" class="third_arrow" alt="no">
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="img_icon">
+                                <div class="icon_notpad">
+                                    <img src="img/single_man.png" class="notpad" alt="">
+                                </div>
+                            </div>
+                            <div class="register_icon register_icon2 text-center">
+                                <h4>Get Contacted directly<br> by employers</h4>
+                            </div>
+                        </div>
+                        <div class="btn_paddimg">
+                            <div class="btn_home btn_register">
+                                <a href="">Create a Profile <div class="btn_round"></div><span class="lnr lnr-arrow-right"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!----=============================
+                     Logo Section
+            ==============================---->
+            <div class="logo_section">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="logo_one text-center">
+                            <img src="img/google.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-3 logo_margin">
+                        <div class="logo_one text-center">
+                            <img src="img/pinterest.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-3 logo_margin">
+                        <div class="logo_one text-center">
+                            <img src="img/Amazon-Logo.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-3 logo_margin">
+                        <div class="logo_one text-center">
+                            <img src="img/LinkedIn_Logo.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!----=============================
+                    Logo Section End
+            ==============================---->
+        </div>
+        <div class="logo_infinite">
+            <img src="img/team_infinite.png" class="animated infinite rotateOut slower" alt="">
+        </div>
+    </section>
+    <!----=============================
+            Register Section End
+    ==============================---->
+
+    <!----=============================
+            Susscess Section
+    ==============================---->
+    <section class="susscess_section">
+        <div class="container">
+            <div class="about_heading sus_heding_icon text-center">
+                <h1>Success Stories</h1>
+                <img src="img/sus_heading_icon.png" class="img_1 animated infinite rotateIn slow" alt="">
+                <p>"On the other hand, we denounce with righteous indignation and dislike<br> men who are so beguiled and demoralized.</p>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="success_item">
+                        <img src="img/sus_img1.png" class="sus_img1" alt="">
+                        <div class="success_text text-center">
+                            <h4><img src="img/sus_2icon.png" alt="">Daniel found his dream job<br> after only two weeks!</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="success_item_2">
+                        <img src="img/sus_img2.png" class="sus_img1" alt="">
+                        <div class="success_text text-center">
+                            <h4><img src="img/sus_2icon.png" alt="">Thanks to Talegri Fred is<br> happier than ever!</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="success_item_2">
+                        <img src="img/sus_img3.png" class="sus_img1" alt="">
+                        <div class="success_text text-center">
+                            <h4><img src="img/sus_2icon.png" alt="">Angela made a big career<br> move!</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="susb_logo_infinite">
+            <img src="img/team_infinite.png" class="animated infinite rotateOut slower" alt="">
+        </div>
+    </section>
+    <!----=============================
+        Susscess Section End
+    ==============================---->
+
+    <!----=============================
+                 Form Section
+        ==============================---->
+    <section class="form_section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4"></div>
+                <div class="col-md-8">
+                    <div class="form2_heading text-left">
+                        <h1>Do you have a question?<br>Do not hesitate to contact us</h1>
+                        <img src="img/h_icon_1.png" class="img_about2 animated infinite rotateIn slow" alt="">
+                        <p>On the other hand, we denounce with righteous indignation and dislike<br> men who are so beguiled and demoralized.</p>
+                    </div>
+                    <div class="row form_btn_padd">
+                        <div class="col-md-6">
+                            <div class="form_one">
+                                <form action="" class="form1">
+                                    <input type="text" class="form_plec" placeholder="First name">
+                                </form>
+                                <form action="" class="form_email form_one_padd">
+                                    <input type="text" class="form_email_id" placeholder="">
+                                    <p class="email_pos">Email ID</p>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form_one">
+                                <form action="" class="form1">
+                                    <input type="text" class="form_plec" placeholder="Last name">
+                                </form>
+                                <form action="" class="form1 form_one_padd">
+                                    <input type="text" class="form_plec" placeholder="Phone number">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form_massage">
+                            <textarea name="" id="form_down_mass" placeholder="What Can We Help You With Right Now?"></textarea>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="btn_home btn_form">
+                            <a href="">Create a Profile <div class="btn_round"></div><span class="lnr lnr-arrow-right"></span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer_section">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="footer_heading">
+                        <h6>Talents</h6>
+                        <ul class="footer_text">
+                            <li><a href="">Find a Job</a></li>
+                            <li><a href="">FAQ</a></li>
+                            <li><a href="">Recommendations</a></li>
+                            <li><a href="">Refer a Friend</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="footer_heading">
+                        <h6>Employers</h6>
+                        <ul class="footer_text">
+                            <li><a href="">Hire a Talent</a></li>
+                            <li><a href="">FAQ</a></li>
+                            <li><a href="">Recommendations</a></li>
+                            <li><a href="">Refer a Friend</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="footer_heading">
+                        <h6>About Us</h6>
+                        <ul class="footer_text">
+                            <li><a href="">Team</a></li>
+                            <li><a href="">What is so unique<br>
+                            about us</a></li>
+                            <li><a href="">Career</a></li>
+                            <li><a href="">Our Values and social Awareness/Contributions</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="footer_heading">
+                        <h6>Contact</h6>
+                        <ul class="footer_text">
+                            <li><a href="">Contact</a></li>
+                            <li><a href="">Blog</a></li>
+                            <li><a href="">Support</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="footer_heading">
+                        <h6>Terms</h6>
+                        <ul class="footer_text">
+                            <li><a href="">Terms & Conditions</a></li>
+                            <li><a href="">Data Privacy</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="simple_line">
+                </div>
+                <div class="copy_right">
+                    <p>©2019 Talegri | All rights reserved</p>
+                    <ul class="icon_right">
+                        <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                        <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                        <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href=""><i class="fab fa-pinterest-p"></i></a></li>
+                        <li><a href=""><i class="fab fa-linkedin-in"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!----=============================
+                Form Section End
+        ==============================---->
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/bootstrap/bootstrap.min.js"></script>
     <script src="js/wow/wow.min.js"></script>

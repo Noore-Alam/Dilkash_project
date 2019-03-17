@@ -17,7 +17,7 @@ ul li {
 }
 
 h1 {
-    font-size: 50px;
+    font-size: 48px;
     margin-bottom: 20px;
     color: #1d0a40;
 }
@@ -34,6 +34,117 @@ p {
     padding: 20px 0;
     font-weight: 400;
 }
+
+
+/*=======================================
+            Menu Styling
+========================================*/
+
+.main_header {
+    width: 100%;
+    padding: 14px 0;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 999;
+}
+
+.header_bg {
+    background: rgba(238, 227, 236, 1);
+}
+
+.logo_left {
+    float: left;
+    display: inline-block;
+}
+
+.logo_left a {
+    display: inline-block;
+}
+
+.menu_right_btn {
+    float: right;
+    display: inline-block;
+}
+
+.menu_right_btn ul li,
+.menu_right_btn ul li a {
+    display: inline-block;
+}
+
+.menu_right_btn ul li {
+    margin-right: 10px;
+}
+
+.menu_right_btn ul li a.sign_btn {
+    padding: 11px 30px;
+    color: #ee3343;
+    background: #fdd1d5;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 4px;
+}
+
+.menu_right_btn .refer_btn {
+    padding: 11px 30px;
+    color: #965aa5;
+    background: rgba(150, 90, 165, .3);
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 4px;
+}
+
+.menu_right_btn .en_btn {
+    padding: 9px 14px;
+    color: #ee3343;
+    background: transparent;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 4px;
+    border: 1px solid #ee3343;
+}
+
+.menu_right_btn .en_btn i {
+    margin-left: 4px
+}
+
+.menu_list {
+    float: right;
+    padding: 12px 0;
+}
+
+.menu_list li {
+    margin-right: 10px;
+}
+
+.menu_list,
+.menu_list li,
+.menu_list li a {
+    list-style: none;
+    display: inline-block;
+}
+
+.it_talents {
+    font-size: 15px;
+    color: #ee3343;
+    font-weight: 500;
+}
+
+.it_talents span {
+    font-size: 12px;
+    margin-left: 4px;
+    font-weight: 600px;
+}
+
+.employers {
+    color: #1d0a40;
+}
+
+
+/*=======================================
+            Menu Styling End
+========================================*/
 
 .home_section {
     padding: 120px 0;
@@ -139,17 +250,22 @@ p {
     padding: 15px 0px;
     width: 256px;
     background: #ee3343;
+    transition: all 300ms linear;
 }
 
-.btn_home:hover .btn_home>img {
-    right: -30px;
+.btn_home:hover {
+    background: #1d0a40;
 }
 
-.btn_home img {
-    padding-right: 38px;
+.btn_home:hover .btn_home span {
+    transform: translateX(10px);
+}
+
+.btn_home span {
     position: absolute;
-    right: -25px;
-    top: 17px;
+    top: 16px;
+    right: 30px;
+    font-size: 17px;
 }
 
 .btn_round {
@@ -165,7 +281,14 @@ p {
 }
 
 
-/* about */
+/*=======================================
+            Home Styling End
+========================================*/
+
+
+/*=======================================
+            About Styling
+========================================*/
 
 .about_section {
     background: #ffffff;
@@ -285,6 +408,16 @@ p {
     }
 }
 
+
+/*=======================================
+            About Styling End
+========================================*/
+
+
+/*=======================================
+            Team Styling 
+========================================*/
+
 .team_section {
     padding: 230px 0;
     background-image: url(../img/team_back.png);
@@ -356,6 +489,16 @@ p {
     left: -30px;
     bottom: -18%;
 }
+
+
+/*=======================================
+            Team Styling End 
+========================================*/
+
+
+/*=======================================
+            About 2 Styling 
+========================================*/
 
 .about2_section {
     padding: 136px 0;
@@ -430,3 +573,416 @@ p {
 .about_tow {
     padding-left: 120px;
 }
+
+
+/*=======================================
+            About 2 Styling End
+========================================*/
+
+
+/*=======================================
+            Register Styling
+========================================*/
+
+.register_section {
+    padding: 60px 0;
+    position: relative;
+}
+
+.register_box {
+    width: 100%;
+    background-image: url(../img/headerbg-3.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% 100%;
+    padding: 80px 40px;
+}
+
+.register_heading h1 {
+    line-height: 56px;
+    color: #ffffff;
+    margin-bottom: 0px;
+}
+
+.register_heading p {
+    color: #ffffff;
+    line-height: 30px;
+    font-size: 18px;
+}
+
+.register_icon h4 {
+    font-size: 20px;
+    line-height: 24px;
+    color: #ffffff;
+    font-weight: 500;
+}
+
+.img_icon {
+    position: relative;
+    text-align: center;
+}
+
+.icon_notpad {
+    background: #ffffff;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    padding: 43px 0;
+    text-align: center;
+    display: inline-block;
+}
+
+.icon_notpad .notpad {
+    width: 55px;
+    height: auto;
+}
+
+.img_icon .fast_arrow {
+    position: absolute;
+    right: -20%;
+    top: 16px;
+}
+
+.register_icon2 h4 {
+    margin-bottom: 0!important;
+    margin-top: 20px;
+}
+
+.img_icon .second_arrow {
+    position: absolute;
+    right: -21%;
+    bottom: 28px;
+}
+
+.img_icon .third_arrow {
+    position: absolute;
+    right: -25%;
+    bottom: 68px;
+}
+
+.btn_register {
+    margin-top: 58px;
+}
+
+.btn_paddimg {
+    margin: 0 auto;
+}
+
+
+/*=======================================
+            Register Styling End
+========================================*/
+
+
+/*=======================================
+            Logo Styling
+========================================*/
+
+.logo_section {
+    padding-top: 12%;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.logo_one img {
+    height: auto;
+    width: 122px;
+}
+
+.logo_margin {
+    margin: 10px 0;
+}
+
+.logo_infinite {
+    position: absolute;
+    left: -50px;
+    bottom: 4%;
+}
+
+
+/*=======================================
+            Logo Styling End
+========================================*/
+
+
+/*=======================================
+            Success Styling
+========================================*/
+
+.susscess_section {
+    padding: 120px 0;
+    background-image: url(../img/suss_back.png);
+    background-size: 100% 108%;
+    width: 100%;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.success_text h4 {
+    position: relative;
+    color: #1d0a40;
+    font-size: 21px;
+    font-weight: 400;
+}
+
+.success_text img {
+    position: absolute;
+    left: -4px;
+    top: -5px;
+}
+
+.success_item {
+    margin-top: 56px;
+}
+
+.success_item_2 {
+    margin-top: 38px;
+}
+
+.success_item .sus_img1 {
+    margin-left: 20px;
+}
+
+.sus_heding_icon img {
+    margin-left: 20px;
+    position: absolute;
+    left: 29%;
+    top: -33px;
+    z-index: 10;
+}
+
+.susb_logo_infinite {
+    position: absolute;
+    right: -10px;
+    top: 18%;
+}
+
+
+/*=======================================
+            Success Styling End
+========================================*/
+
+
+/*=======================================
+            Form Styling
+========================================*/
+
+.form_section {
+    padding: 120px 0;
+    background-image: url(../img/form_back.png);
+    background-size: 100% 108%;
+    width: 100%;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.form2_heading {
+    width: 100%;
+    position: relative;
+}
+
+.form2_heading h1 {
+    font-size: 48px;
+}
+
+.form2_heading .img_about2 {
+    position: absolute;
+    left: -24px;
+    top: 76px;
+    z-index: -1;
+    width: 6%;
+}
+
+.form2_heading p {
+    padding: 0;
+}
+
+.form1 {
+    width: 100%;
+    height: 50px;
+    box-shadow: 0px 0px 36px 0px rgba(238, 51, 67, .2);
+    border-radius: 6px;
+}
+
+.form_btn_padd {
+    margin-top: 60px;
+}
+
+.form_plec {
+    width: 100%;
+    border: none;
+    background: #ffffff;
+    padding: 14px 22px;
+    font-size: 15px;
+    border-radius: 6px;
+    outline: none;
+}
+
+.form_one_padd {
+    margin-top: 24px;
+}
+
+::placeholder {
+    color: #acacac;
+}
+
+.form_email {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-radius: 6px;
+}
+
+.form_email_id {
+    width: 100%;
+    border: none;
+    background: #ffffff;
+    padding: 14px 22px;
+    font-size: 15px;
+    border-radius: 6px;
+    outline: none;
+    border: 1px solid rgb(238, 51, 67);
+}
+
+.form_email .email_pos {
+    position: absolute;
+    left: 22px;
+    top: -10px;
+    font-size: 15px;
+    color: #ee3343;
+    margin: 0;
+    background: #ffffff;
+    padding: 0px 5px;
+}
+
+.form_massage {
+    width: 100%;
+    padding: 26px 14px;
+}
+
+.form_massage textarea {
+    width: 100%;
+    margin-left: 1px;
+    border-radius: 6px;
+    padding: 14px;
+    border: none;
+    height: 118px;
+    box-shadow: 0px 0px 36px 0px rgba(238, 51, 67, .2);
+}
+
+.btn_form {
+    margin-top: 10px;
+    margin-left: 16px;
+}
+
+.btn_form a {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/*=======================================
+            Form Styling End
+========================================*/
+
+
+/*=======================================
+            Footer Styling
+========================================*/
+
+.footer_section {
+    padding-top: 60px;
+    width: 100%;
+    position: relative;
+    background-image: url(../img/form_background.png);
+    margin-top: 60px;
+    background-repeat: no-repeat;
+}
+
+.footer_heading h6 {
+    font-size: 20px;
+    font-weight: 500;
+    color: #ffffff;
+    line-height: 36px;
+}
+
+.footer_heading h6:hover {
+    color: #ee3343;
+}
+
+.footer_text li a {
+    font-size: 16px;
+    color: #fdd1d5;
+}
+
+.footer_text li a:hover {
+    color: #ffffff;
+}
+
+.footer_text li {
+    margin-top: 30px;
+}
+
+.simple_line {
+    width: 100%;
+    height: 1px;
+    background: #ffffff;
+    opacity: .4;
+    margin-top: 60px;
+}
+
+.copy_right p {
+    font-size: 16px;
+    color: #ffffff;
+    display: inline-block;
+    margin: 0;
+}
+
+.copy_right {
+    width: 100%;
+}
+
+input:focus,
+input:hover,
+input.active {
+    border-color: red;
+}
+
+.copy_right .icon_right {
+    float: right;
+    margin-top: 18px;
+}
+
+.copy_right .icon_right li {
+    list-style: none;
+    display: inline-block;
+}
+
+.copy_right .icon_right li:not(:first-child) {
+    margin-left: 20px;
+}
+
+.icon_right li a {
+    color: #ffffff;
+    transition: all 300ms linear;
+}
+
+.icon_right li a:hover {
+    color: #ee3343;
+}
+
+
+/*=======================================
+            Footer Styling End
+========================================*/
+
+
+/*=======================================
+            Media Queryies
+========================================*/
+
+
+/*==============================================
+    Big Landscape Tablets Laptops and Desktops
+===================================================*/
+
+@media (min-width:1200px) {}
